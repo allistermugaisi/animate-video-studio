@@ -1,0 +1,76 @@
+$color1: linear-gradient(45deg, rgb(51, 155, 250), rgb(15, 247, 169));
+$color2: linear-gradient(45deg, rgb(253, 213, 213), rgb(245, 97, 98));
+$color3: linear-gradient(45deg, rgb(250, 109, 196), rgb(126, 113, 232));
+
+.offers {
+  margin: auto;
+  display: flex;
+  max-width: 1100px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+h1 {
+  background-size: 100%;
+  margin: 3rem 0;
+  text-align: center;
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 70%,
+    #b12a5b 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+li {
+  list-style-type: none;
+}
+.offer {
+  background-color: rgb(41, 40, 62);
+  color: #fff;
+  margin: 20px;
+  max-width: 300px;
+  min-width: 250px;
+  flex: 1;
+  text-align: center;
+  .title {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .price {
+    font-size: 1.75rem;
+    padding: 1.5rem 0 0.5rem;
+  }
+  .desc {
+    padding: 1rem;
+  }
+  hr {
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.35);
+  }
+  .buy {
+    padding: 0.5rem 1rem;
+    width: 150px;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    cursor: pointer;
+  }
+}
+.bg1 {
+  background: $color1;
+}
+.bg2 {
+  background: $color2;
+}
+.bg3 {
+  background: $color3;
+}

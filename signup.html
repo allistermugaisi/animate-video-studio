@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/signup.css">
+
+    <title>Animate Video | Studio</title>
+</head>
+<body>
+    <div class="showcase">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                <button type="button" onclick="register()" class="toggle-btn">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="./images/fb.png" alt="facebook-icon">
+                <img src="./images/tw.png" alt="twitter-icon">
+                <img src="./images/gp.png" alt="google-icon">
+            </div>
+            <form id="login" class="input-group" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+                <button type="submit" class="home-btn"><a href="/">Home</a></button>
+            </form>
+            <form id="register" class="input-group" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <span>I agree to terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="home-btn"><a href="/">Home</a></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let x = document.getElementById("login")
+        let y = document.getElementById("register")
+        let z = document.getElementById("btn")
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0"
+        }
+    </script>
+</body>
+</html>
